@@ -9,5 +9,12 @@
 
 #     A single integer n, where 1 <= n <= 100.
 
+
+
 def diamond(n):
-    
+    for i in range(n):
+        print(" " * (n - i - 1) + "*" * (2*i + 1))
+    for i in range(n-2, -1, -1):
+        print(" " * (n - i - 1) + "*" * (2*i + 1))
+
+diamond(5)
